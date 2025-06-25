@@ -1,5 +1,5 @@
 ### PHYLOGENETIC PATH ANALYSIS ANALYSING WORKER REPRODUCTIVE POTENTIAL 
-# Juliet Nov 2024. ------ HIGH CONF
+# Juliet F. R. Turner, 2025
 
 
 ## repeated for all 4 MCC trees. 
@@ -13,8 +13,6 @@ library(phylopath)
 library(car)
 library(dplyr)
 
-
-setwd("~/Documents/Reproduction_Nov24/Path_Analyses/WRP")
 
 ant_data <- read.csv("Nov24_data.csv", header=T) ####### ALL SPECIES CONFIDENCE SUBSET
 #fix formatting
