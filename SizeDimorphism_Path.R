@@ -1,6 +1,5 @@
 ### PHYLOGENETIC PATH ANALYSIS ANALYSING QUEEN-WORKER SIZE DIMORPHISM
-# Juliet October 2024
-
+# Juliet F. R. Turner 2025
 
 ## repeated for all 4 MCC trees. 
 
@@ -12,9 +11,6 @@ library(ggplot2)
 library(phylopath)
 library(car)
 library(dplyr)
-
-
-setwd("~/Documents/Reproduction_Nov24/Path_Analyses/Size Dimorphism")
 
 ant_data <- read.csv("merged_data_Jan25.csv", header=T) 
 
@@ -224,7 +220,7 @@ combined_summaries <- rbind(NCuniform_stem_summary, NCuniform_crown_summary, FBD
 
 
 ######################################################################
-# _ means "affects"
+# NOTE: '_' means "affects"
 
 #Function for extracting Path coefficient, SE, and 95% confidence interval from the Bootstrapped model results
 generate_stats <- function(result, value, MCC) {
