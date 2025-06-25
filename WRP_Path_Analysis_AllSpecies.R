@@ -14,7 +14,7 @@ library(phylopath)
 library(car)
 library(dplyr)
 
-ant_data <- read.csv("Nov24_data.csv", header=T) ####### ALL SPECIES CONFIDENCE SUBSET
+ant_data <- read.csv("Nov24_data.csv", header=T) 
 #fix formatting
 ant_data$colony.size<- gsub(",", ".", ant_data$colony.size, fixed = T)
 ant_data$colony.size<-as.numeric(ant_data$colony.size)
