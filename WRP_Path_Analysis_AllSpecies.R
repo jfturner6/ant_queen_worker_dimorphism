@@ -1,5 +1,6 @@
 ### PHYLOGENETIC PATH ANALYSIS ANALYSING WORKER REPRODUCTIVE POTENTIAL 
-# Juliet Nov 2024. ------ HIGH CONF
+# Juliet Turner, 2025 
+# all species subset
 
 
 ## repeated for all 4 MCC trees. 
@@ -12,9 +13,6 @@ library(ggplot2)
 library(phylopath)
 library(car)
 library(dplyr)
-
-
-setwd("~/Documents/Reproduction_Nov24/Path_Analyses/WRP")
 
 ant_data <- read.csv("Nov24_data.csv", header=T) ####### ALL SPECIES CONFIDENCE SUBSET
 #fix formatting
@@ -41,7 +39,7 @@ all_variables<-dplyr::select(reprod_path_data_subset,  animal, type, log10.colon
 # Convert tibble to a base R data frame
 all_variables <- as.data.frame(all_variables)
 # Set the row names to the species names
-rownames(all_variables) <- all_variables$animal ## 44 species
+rownames(all_variables) <- all_variables$animal 
 
 
 #Read in phylogenetic trees
@@ -79,7 +77,7 @@ all_variables <- filter(all_variables, animal %in% NCuniform_stem_pruned$tip.lab
 #                      j = c(Mating_frequency ~ Colony_size, Colony_size ~ Sterility, Queen_Number ~ Colony_size),
 #                      k = c(Mating_frequency ~ Colony_size, Colony_size ~ Queen_Number, Sterility ~ Queen_Number),
 #                      l = c(Mating_frequency ~ Colony_size, Colony_size ~ Queen_Number, Queen_Number ~ Sterility),
-#                      m = c(Mating_frequency ~ Colony_size, Sterility ~ Colony_size), #REMOVE QN
+#                      m = c(Mating_frequency ~ Colony_size, Sterility ~ Colony_size), 
 #                      n = c(Mating_frequency ~ Colony_size, Colony_size ~ Sterility),
 #                      o = c(Mating_frequency ~ Colony_size),
 #                      p = c(Colony_size ~ Mating_frequency)) 
