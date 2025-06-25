@@ -1,7 +1,5 @@
-## ALL SPECIES SUBSET
-
-### PHYLOGENETIC PATH ANALYSIS ANALYSING SEX AS A BINARY VARIABLE
-# Juliet Jan 25. ------ HIGH CONF
+### PHYLOGENETIC PATH ANALYSIS ANALYSING WORKER SEX AS A BINARY VARIABLE
+# Juliet F. R. Turner, 2025 
 
 
 ## repeated for all 4 MCC trees. 
@@ -15,12 +13,7 @@ library(phylopath)
 library(car)
 library(dplyr)
 
-
-setwd("~/Documents/Reproduction_Nov24/Path_Analyses/WRP")
-
 ant_data <- read.csv("Nov24_data.csv", header=T) ####### HIGHEST LEVEL CONFIDENCE SUBSET
-
-
 
 
 #fix formatting
@@ -235,10 +228,9 @@ combined_summaries <- rbind(NCuniform_stem_summary, NCuniform_crown_summary, FBD
 
 
 ######################################################################
-# CS_S, S_CS, 
-# CS_MF, QN_MF,  #should be right way round now. "_" as "affects", not "affected by"
-# QN_S, S_QN, 
-# CS_QN, QN_CS
+  # "_" is "affects", not "affected by"
+
+
 
 #Function for extracting Path coefficient, SE, and 95% confidence interval from the Bootstrapped model results
 generate_stats <- function(result, value, MCC) {
