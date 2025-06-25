@@ -1,6 +1,5 @@
 ### PHYLOGENETIC PATH ANALYSIS ANALYSING WORKER REPRODUCTIVE POTENTIAL 
-# Juliet Turner, 2025 
-# all species subset
+# Juliet F. R. Turner, 2025 
 
 
 ## repeated for all 4 MCC trees. 
