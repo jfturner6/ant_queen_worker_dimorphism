@@ -1,5 +1,5 @@
 ### PHYLOGENETIC PATH ANALYSIS ANALYSING QUEEN-WORKER SIZE DIMORPHISM
-# Juliet F. R. Turner 2025
+# Juliet F. R. Turner, 2025
 
 ## repeated for all 4 MCC trees. 
 
